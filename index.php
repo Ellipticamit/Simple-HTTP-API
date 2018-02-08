@@ -154,6 +154,9 @@ $imgData = base64_encode(file_get_contents($img_file));
 			$category = mysql_real_escape_string($_REQUEST['category']);
 			$drivingtipscategory = drivingtipscategory($category);
 			echo $drivingtipscategory;	
+		}
+	elseif ($action == 'test') {
+		echo 'test';
 		}	
 	
 
